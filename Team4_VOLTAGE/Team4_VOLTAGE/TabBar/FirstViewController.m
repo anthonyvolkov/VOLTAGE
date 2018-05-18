@@ -7,6 +7,9 @@
 //
 
 #import "FirstViewController.h"
+#import "LogoDrawingView.h"
+#import "TeamNameDrawingView.h"
+#import "TeamMembersDrawingView.h"
 
 @interface FirstViewController ()
 
@@ -16,7 +19,43 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    @autoreleasepool{
+    
+        //set background color
+    self.view.backgroundColor = [UIColor colorWithRed:196/255.f green:229/255.f blue:245/255.f alpha:1];
+    
+        //-----adding logo
+    LogoDrawingView *logo = [[LogoDrawingView alloc] initWithFrame:CGRectMake(0, 0,
+                                                                              self.view.bounds.size.width/1.15f,
+                                                                              self.view.bounds.size.width/1.15f)];
+    logo.backgroundColor = [UIColor clearColor];
+//    logo.backgroundColor = [UIColor grayColor];
+    logo.center = CGPointMake(self.view.center.x,
+                              logo.bounds.size.height/2 + self.view.bounds.size.height/14.72);
+    [self.view addSubview:logo];
+
+
+        //-----adding team name
+    TeamNameDrawingView *teamName = [[[TeamNameDrawingView alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height/1.89f,
+                                                                                           self.view.bounds.size.width,
+                                                                                           self.view.bounds.size.width/4.14f)] autorelease];
+//    teamName.backgroundColor = [UIColor grayColor];
+    teamName.backgroundColor = [UIColor clearColor];
+    [self.view addSubview:teamName];
+
+        
+        //-----adding team members
+    TeamMembersDrawingView *teamMembers = [[[TeamMembersDrawingView alloc] initWithFrame:
+                                                                                CGRectMake(0,self.view.bounds.size.height - self.view.bounds.size.height/3.5f,
+                                                                                self.view.bounds.size.width,
+                                                                                self.view.bounds.size.width/1.88f)] autorelease];
+//    teamMembers.backgroundColor = [UIColor grayColor];
+    teamMembers.backgroundColor = [UIColor clearColor];
+    [self.view addSubview:teamMembers];
+    
+    }
+
 }
 
 - (void)didReceiveMemoryWarning {

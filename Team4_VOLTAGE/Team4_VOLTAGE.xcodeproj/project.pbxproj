@@ -16,6 +16,9 @@
 		2BCBBE5F20ADE88600BD17FA /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCBBE5E20ADE88600BD17FA /* FirstViewController.m */; };
 		2BCBBE6220ADE89900BD17FA /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCBBE6120ADE89900BD17FA /* SecondViewController.m */; };
 		2BCBBE6520ADE8C800BD17FA /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCBBE6420ADE8C800BD17FA /* ThirdViewController.m */; };
+		2BF5A11120AE3A4D0065FB8D /* LogoDrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF5A11020AE3A4D0065FB8D /* LogoDrawingView.m */; };
+		2BF5A11420AE3A960065FB8D /* TeamNameDrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF5A11320AE3A960065FB8D /* TeamNameDrawingView.m */; };
+		2BF5A11720AE3AD80065FB8D /* TeamMembersDrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF5A11620AE3AD80065FB8D /* TeamMembersDrawingView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,12 @@
 		2BCBBE6120ADE89900BD17FA /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		2BCBBE6320ADE8C800BD17FA /* ThirdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		2BCBBE6420ADE8C800BD17FA /* ThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		2BF5A10F20AE3A4D0065FB8D /* LogoDrawingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogoDrawingView.h; sourceTree = "<group>"; };
+		2BF5A11020AE3A4D0065FB8D /* LogoDrawingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogoDrawingView.m; sourceTree = "<group>"; };
+		2BF5A11220AE3A960065FB8D /* TeamNameDrawingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeamNameDrawingView.h; sourceTree = "<group>"; };
+		2BF5A11320AE3A960065FB8D /* TeamNameDrawingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeamNameDrawingView.m; sourceTree = "<group>"; };
+		2BF5A11520AE3AD80065FB8D /* TeamMembersDrawingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeamMembersDrawingView.h; sourceTree = "<group>"; };
+		2BF5A11620AE3AD80065FB8D /* TeamMembersDrawingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeamMembersDrawingView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +76,7 @@
 		2BCBBE3A20ADE68900BD17FA /* Team4_VOLTAGE */ = {
 			isa = PBXGroup;
 			children = (
+				2BF5A10D20AE39F20065FB8D /* DrawingViews */,
 				2BCBBE5320ADE7C600BD17FA /* TabBar */,
 				2BCBBE3B20ADE68900BD17FA /* AppDelegate.h */,
 				2BCBBE3C20ADE68900BD17FA /* AppDelegate.m */,
@@ -92,6 +102,27 @@
 				2BCBBE6420ADE8C800BD17FA /* ThirdViewController.m */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		2BF5A10D20AE39F20065FB8D /* DrawingViews */ = {
+			isa = PBXGroup;
+			children = (
+				2BF5A10E20AE3A0E0065FB8D /* ViewsForFirstViewController */,
+			);
+			path = DrawingViews;
+			sourceTree = "<group>";
+		};
+		2BF5A10E20AE3A0E0065FB8D /* ViewsForFirstViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2BF5A10F20AE3A4D0065FB8D /* LogoDrawingView.h */,
+				2BF5A11020AE3A4D0065FB8D /* LogoDrawingView.m */,
+				2BF5A11220AE3A960065FB8D /* TeamNameDrawingView.h */,
+				2BF5A11320AE3A960065FB8D /* TeamNameDrawingView.m */,
+				2BF5A11520AE3AD80065FB8D /* TeamMembersDrawingView.h */,
+				2BF5A11620AE3AD80065FB8D /* TeamMembersDrawingView.m */,
+			);
+			path = ViewsForFirstViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,10 +198,13 @@
 			files = (
 				2BCBBE5F20ADE88600BD17FA /* FirstViewController.m in Sources */,
 				2BCBBE6220ADE89900BD17FA /* SecondViewController.m in Sources */,
+				2BF5A11120AE3A4D0065FB8D /* LogoDrawingView.m in Sources */,
 				2BCBBE6520ADE8C800BD17FA /* ThirdViewController.m in Sources */,
 				2BCBBE4020ADE68900BD17FA /* ViewController.m in Sources */,
+				2BF5A11720AE3AD80065FB8D /* TeamMembersDrawingView.m in Sources */,
 				2BCBBE4B20ADE68900BD17FA /* main.m in Sources */,
 				2BCBBE3D20ADE68900BD17FA /* AppDelegate.m in Sources */,
+				2BF5A11420AE3A960065FB8D /* TeamNameDrawingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,7 +239,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -260,7 +294,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
